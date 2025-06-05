@@ -1,0 +1,14 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - transformers
+      - accelerate
+      - sentencepiece
+      - protobuf
+      - azureml-inference-server-http
+name: deepseek-env
