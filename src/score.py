@@ -11,7 +11,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def init():
     global model, tokenizer
-    model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR", "."), "deepseek-model-qwen-1o5b")
+    model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR", "."), "deepseek-qwen-1o5b")
     print(f"[DEBUG] Loading model from path: {model_path}")
     
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True, ignore_mismatched_sizes=True)
