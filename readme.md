@@ -1,4 +1,4 @@
-# 🚀 Step-by-Step Guide to Deploying DeepSeek Distill Model on Azure ML
+# Step-by-Step Guide to Deploying the DeepSeek Distill Model on Azure ML
 
 ## Background: Why Azure ML Over Azure VM?
 
@@ -14,7 +14,7 @@ When deploying machine learning models, especially large language models like De
 Before deploying, ensure your Azure ML workspace has access to GPU resources:
 
 1. Go to your Azure ML workspace in the Azure Portal.
-2. Navigate to **Usage + quotas**.
+2. Navigate to Computer Instance > View quota.
 3. Request a quota increase for GPU-enabled compute (e.g., `Standard_NC4as_T4_v3`).
 4. Wait for approval (usually within 24 hours).
 
